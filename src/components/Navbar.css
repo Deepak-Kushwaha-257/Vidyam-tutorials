@@ -1,0 +1,97 @@
+/* src/components/Navbar.css */
+
+:root {
+  --mb-orange: #ff7043;
+  --mb-dark-blue: #0c2c52;
+  --mb-bg-light: #fdf7f4;
+}
+
+/* reset-ish */
+.mb-header {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+}
+
+/* top strip */
+.mb-top-strip {
+  background-color: #fbeee8;
+  color: var(--mb-dark-blue);
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 16px;
+}
+
+.mb-top-strip a {
+  color: var(--mb-orange);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* main nav area */
+.mb-navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.mb-navbar-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* logo */
+.mb-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mb-logo-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  background-color: #70c24a; /* green circle */
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mb-logo-text {
+  font-size: 20px;
+  font-weight: 600;
+  color: #222222;
+}
+
+/* right button */
+.mb-actions {
+  display: flex;
+  align-items: center;
+}
+
+.mb-enotes-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 999px;
+  border: 1px solid var(--mb-orange);
+  background-color: #fff5f0;
+  color: var(--mb-orange);
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+.mb-enotes-btn:hover {
+  background-color: #ffe4d7;
+}
+
+.mb-enotes-icon {
+  font-size: 16px;
+}

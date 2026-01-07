@@ -1,0 +1,95 @@
+/* src/components/Team.css */
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+
+.mb-team {
+  background-color: #ffffff;          /* blue background */
+  padding: 70px 16px 90px;
+  text-align: center;
+  
+}
+
+.mb-team-title {
+  max-width: 900px;
+  margin: 0 auto 50px;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: #121212;
+}
+
+/* cards row */
+.mb-team-cards {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* single card */
+.mb-team-card {
+  width: 280px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 26px 24px 30px;
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.18);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* photo */
+.mb-team-photo-wrap {
+  width: 100%;
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mb-team-photo {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* text */
+.mb-team-name {
+  margin-top: 18px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.mb-team-role {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* dots for socials */
+.mb-team-social {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.mb-team-dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  background-color: #d1d5db;
+}
+
+/* responsive */
+@media (max-width: 700px) {
+  .mb-team-title {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+}

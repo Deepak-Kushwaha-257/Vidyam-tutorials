@@ -1,0 +1,223 @@
+/* src/components/Footer.css */
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+
+.mb-footer {
+  background-color: #1e1b4b;  /* dark purple */
+  color: #ffffff;
+  padding: 60px 16px 0;
+}
+
+.mb-footer-inner {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 40px;
+  padding-bottom: 40px;
+}
+
+/* column */
+.mb-footer-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.mb-footer-heading {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 18px;
+  color: #ffffff;
+}
+
+.mb-footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mb-footer-links a {
+  color: #d1d5db;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.mb-footer-links a:hover {
+  color: #ffffff;
+}
+
+/* contact column */
+.mb-footer-contact {
+  align-items: flex-start;
+}
+
+.mb-footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.mb-footer-logo-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  background-color: #70c24a;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mb-footer-logo-text {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.mb-footer-address {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #d1d5db;
+  margin-bottom: 16px;
+}
+
+.mb-footer-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.mb-footer-contacts p {
+  font-size: 14px;
+  color: #d1d5db;
+  margin: 0;
+}
+
+.mb-footer-playstore {
+  display: block;
+  width: 160px;
+  margin-top: 16px;
+}
+
+.mb-footer-playstore img {
+  width: 100%;
+  height: auto;
+}
+
+/* bottom bar */
+.mb-footer-bottom {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mb-footer-bottom p {
+  font-size: 14px;
+  color: #9ca3af;
+  margin: 0;
+}
+
+.mb-footer-socials {
+  display: flex;
+  gap: 12px;
+}
+
+.mb-social-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  transition: background-color 0.2s;
+}
+
+.mb-social-icon:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* responsive */
+@media (max-width: 1100px) {
+  .mb-footer-inner {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .mb-footer-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .mb-footer-bottom {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+/* Make logo clickable */
+.mb-footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.mb-footer-logo:hover {
+  opacity: 0.85;
+}
+
+/* Ensure playstore link looks good */
+.mb-footer-playstore {
+  display: block;
+  width: 160px;
+  margin-top: 16px;
+  transition: opacity 0.2s;
+}
+
+.mb-footer-playstore:hover {
+  opacity: 0.85;
+}
+
+/* Social icons with better hover */
+.mb-social-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  transition: background-color 0.2s, transform 0.2s;
+  cursor: pointer;
+}
+
+.mb-social-icon:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}

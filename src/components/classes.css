@@ -1,0 +1,124 @@
+/* src/components/classes.css */
+
+/* section */
+.mb-top-courses {
+  background-color: #f9fbff;
+  padding: 60px 16px 80px;
+}
+
+.mb-top-courses-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+
+/* centered heading */
+.mb-top-title {
+  font-size: 40px;
+  font-weight: 800;
+  color: #062a4d;
+  margin-bottom: 40px;
+}
+
+/* flex row for two cards - space between */
+.mb-course-flex {
+  display: flex;
+  justify-content: space-between;        /* Center the cards */
+  align-items: stretch;
+  gap: 60px;                       /* Increased gap between cards */
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Link wrapper - no underline */
+.mb-course-card-link {
+  text-decoration: none;
+  color: inherit;
+  flex: 0 1 330px;                 /* Fixed width cards */
+}
+
+/* bigger cards with more height */
+.mb-course-card {
+  width: 100%;
+  min-height: 200px;
+  background-color: #ffffff;
+  border-radius: 18px;
+  padding: 36px 32px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.mb-course-card-link:hover .mb-course-card {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 40px rgba(15, 23, 42, 0.12);
+}
+
+/* inside card */
+.mb-course-title {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.mb-course-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background-color: #ffe7b9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+}
+
+.mb-course-class {
+  font-size: 24px;
+  font-weight: 700;
+  color: #062a4d;
+  margin: 0;
+}
+
+.mb-course-stream {
+  font-size: 15px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.mb-course-link {
+  margin-top: 12px;
+  border: none;
+  background: none;
+  color: #1d4ed8;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 8px 0;
+}
+
+.mb-course-link:hover {
+  color: #1e40af;
+}
+
+/* responsive */
+@media (max-width: 700px) {
+  .mb-course-flex {
+    flex-direction: column;
+    gap: 24px;
+    max-width: 400px;
+  }
+
+  .mb-course-card-link {
+    flex: 0 1 auto;
+  }
+
+  .mb-course-card {
+    min-height: 180px;
+  }
+}
