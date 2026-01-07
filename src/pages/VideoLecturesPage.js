@@ -47,12 +47,6 @@ const physicsChapters = [
         youtubeUrl: "https://www.youtube.com/watch?v=EXAMPLE3",
       },
 
-      {
-        id: 4,
-        title: "Coulomb's Law - Part 2",
-        youtubeUrl: "https://www.youtube.com/watch?v=EXAMPLE4",
-      },
-
       // Add more videos as needed - count will update automatically
     ],
 
